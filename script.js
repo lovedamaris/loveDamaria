@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     updateRelationshipInfo();
     createFloatingHearts();
     updateDaysCounter();
+    initializeLightbox();
     
     // Atualizar contagem de dias a cada hora
     setInterval(updateDaysCounter, 3600000);
@@ -66,6 +67,19 @@ function createFloatingHearts() {
     
     // Criar corações continuamente
     setInterval(createHeart, 500);
+}
+
+// Inicializar Lightbox
+function initializeLightbox() {
+    if (typeof lightbox !== 'undefined') {
+        lightbox.option({
+            'resizeDuration': 200,
+            'wrapAround': true,
+            'albumLabel': 'Foto %1 de %2',
+            'disableScrolling': true,
+            'fadeDuration': 300
+        });
+    }
 }
 
 // Controle de música
