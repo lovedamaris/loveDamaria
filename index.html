@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartinha de Amor 💕</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Música de Fundo -->
+        <audio id="backgroundMusic" loop>
+            <source src="musica.mp3" type="audio/mpeg">
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
+
+        <!-- Botão de Controle de Música -->
+        <button class="music-toggle" onclick="toggleMusic()">🎵 Ativar Música</button>
+
+        <!-- Galeria de Fotos -->
+        <div class="photo-gallery">
+            <h2>Nossos Momentos 📸</h2>
+            <div class="gallery-container">
+                <div class="photo-item">
+                    <img src="foto1.jpg" alt="Foto 1">
+                </div>
+                <div class="photo-item">
+                    <img src="foto2.jpg" alt="Foto 2">
+                </div>
+                <div class="photo-item">
+                    <img src="foto3.jpg" alt="Foto 3">
+                </div>
+            </div>
+        </div>
+
+        <!-- Data de Início do Namoro -->
+        <div class="relationship-info">
+            <h3>Juntos desde:</h3>
+            <p id="relationshipDate">00/00/0000</p>
+            <p id="daysCounter">Calculando dias...</p>
+        </div>
+
+        <!-- Cartinha de Amor -->
+        <div class="love-letter">
+            <h1>💌 Minha Cartinha Para Você 💌</h1>
+            <div class="letter-content">
+                <p>Olá meu amor,</p>
+                <p>
+                    Escrevo estas palavras com o coração transbordando de amor e gratidão por ter você em minha vida.
+                    Cada dia ao seu lado é um presente que eu não sabia que poderia ser tão especial.
+                </p>
+                <p>
+                    Você ilumina meus dias com seu sorriso, me conforta com sua presença e me inspira a ser uma pessoa melhor.
+                    Obrigado por ser você, por estar comigo e por compartilhar esta jornada extraordinária.
+                </p>
+                <p>
+                    Te amo mais do que palavras podem expressar. Você é meu melhor amigo, meu amor e minha inspiração.
+                </p>
+                <p>
+                    Para sempre seu(a),<br>
+                    <strong>Com todo meu amor</strong> ❤️
+                </p>
+            </div>
+        </div>
+
+        <!-- Coração Flutuante -->
+        <div class="hearts-container"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
